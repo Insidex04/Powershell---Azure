@@ -1,3 +1,6 @@
+#Nos conectamos
+Connect-Graph -Scopes Organization.Read.All
+
 # Obtener todos los usuarios
 $usuarios = Get-MgUser -All | Select-Object -Property DisplayName,UserPrincipalName
 
