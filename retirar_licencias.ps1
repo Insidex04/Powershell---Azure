@@ -3,7 +3,7 @@
 $users = get-MgUser -All -Property 'UserPrincipalName', 'OfficeLocation', 'mail', 'Id'
 
 | Where-Object { $_.UserPrincipalName
--like "zoom*@isep.es" }
+-like "*@costoso.es" }
 
 | Sort-Object mail
 
